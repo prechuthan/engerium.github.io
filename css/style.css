@@ -1,0 +1,102 @@
+body{
+  font-family: 'Lato', sans-serif;
+  background-color: #242F35; /* #1B2327 #263238 #36474F #FFFFFF #242F35*/
+  color: #FFFFFF;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #7DCBC4;
+}
+
+hr{
+  border: 0 none;
+  height: 1px;
+  background-color: #45545B;
+  color: #45545B;
+}
+
+.buffer{
+  margin-bottom: 20px;
+}
+
+.dialog{
+  border-color: #35454D;
+  border-top-color: #45545B;
+  background-color: #36474F;
+  border-radius: 2px;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+  border-style: solid;
+  border-width: 1px;
+}
+
+.header h3{
+  color: #FFFFFF;
+}
+
+.header span{
+  color: #7DCBC4;
+}
+
+.header.buffer{
+  margin-bottom: 30px; 
+}
+
+.circle{
+  border-radius: 50% 50% 50% 50%;
+}
+
+.profile {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.profile p{
+  margin-bottom: 0px;
+}
+
+.profile img{
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.showcase{
+  padding-top: 0px;
+}
+
+.showcase h3{
+  text-align: center;
+}
+
+.project{
+  margin-bottom: 30px;
+}
+
+.blog{
+  margin-right: 1%;
+}
+
+.blog.col-md-6{
+  width: 49%;
+}
+
+.blog.col-lg-6{
+  width: 49%;
+}
+
+.github{
+  margin-left: 1%;
+}
+
+.github.col-md-6{
+  width: 49%;
+}
+
+.github.col-lg-6{
+  width: 49%;
+}
