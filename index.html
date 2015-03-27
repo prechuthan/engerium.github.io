@@ -9,6 +9,18 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+		<script type="text/javascript">
+			function email(name, domain, withlink) {
+				var addr = name + '@' + domain;
+				if (withlink) {
+				  document.write('<p>Email: <a href="mailto:' + addr + '">' + addr + '</a></p>');
+				} else {
+				  document.write(addr);
+				}
+      		}
+		</script>
+
 	</head>
 	<body>
 		<div class="container">
@@ -16,7 +28,7 @@
 				<h3>engerium<span>.io</span></h3>
 			</div>
 
-			<div class="profile dialog buffer">
+			<div class="profile dialog buffer col-sm-12 col-md-12 col-lg-12">
 				<img class="circle" src="img/avatar.png" alt="Profile Picture"></img>
 				<h2>Preshant Achuthan</h2>
 				<p>Aspiring infocomm security professional with a passion in iOS & Web development</p>
@@ -26,31 +38,31 @@
 				<h3>Projects</h3>
 				<hr>	
 				<div class="project col-sm-12 col-md-4 col-lg-4">
-					<h4>ABC-SSH</h4>
+					<a href="https://github.com/engerium/ABC-SSH"><h4>ABC-SSH</h4></a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 				</div>
 				<div class="project col-sm-12 col-md-4 col-lg-4">
-					<h4>Average-CPL</h4>
+					<a href="https://github.com/engerium/average-cpl"><h4>Average-CPL</h4></a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 				</div>
 				<div class="project col-sm-12 col-md-4 col-lg-4">
-					<h4>DDNS-CloudFlare</h4>
+					<a href="https://github.com/engerium/DDNS-CloudFlare"><h4>DDNS-CloudFlare</h4></a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 				</div>
 				<div class="project col-sm-12 col-md-4 col-lg-4">
-					<h4>ProductiveTime</h4>
+					<a href="https://github.com/engerium/productivetime"><h4>ProductiveTime</h4></a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 				</div>
 				<div class="project col-sm-12 col-md-4 col-lg-4">
-					<h4>SmartHomie</h4>
+					<a href="http://www.smarthomie.com"><h4>SmartHomie</h4></a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 				</div>
 				<div class="project col-sm-12 col-md-4 col-lg-4">
-					<h4>Statocat</h4>
+					<a href="https://statocat.herokuapp.com"><h4>Statocat</h4></a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 				</div>
 				<div class="project col-sm-12 col-md-4 col-lg-4">
-					<h4>Wappalyzer</h4>
+					<a href="https://github.com/AliasIO/Wappalyzer"><h4>Wappalyzer</h4></a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 				</div>
 			</div>
@@ -59,15 +71,23 @@
 				<div class="blog col-sm-12 col-md-6 col-lg-6">
 					<h3>Blog</h3>
 					<hr>
-					<img src="img/blog.png">
+					<a href="https://blog.engerium.io" class="darken"><img src="img/blog.png"></a>
 					<p>Ut enim ad minim veniam</p>
 				</div>
 				<div class="github col-sm-12 col-md-6 col-lg-6">
 					<h3>GitHub</h3>
 					<hr>
-					<img src="img/github.png">
+					<a href="https://github.com/engerium" class="darken"><img src="img/github.png"></a>
 					<p>Ut enim ad minim veniam</p>
 				</div>
+			</div>
+
+			<div class="contact dialog buffer col-sm-12 col-md-12 col-lg-12">
+				<h3>Contact</h3>
+				<hr>
+				<p>Twitter: <a href="https://twitter.com/engerium">@engerium</a></p>
+				<p>Telegram: <a href="https://telegram.me/engerium">@engerium</a></p>
+				<script>email("engerium", "gmail.com", true);</script>
 			</div>
 
 			<div class="footer buffer">

@@ -4,10 +4,49 @@ body  {
   color: #FFFFFF;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   color: #7DCBC4;
+}
+
+a, a:active, a:visited {
+  color: #7DCBC4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7DCBC4;
+}
+
+a.darken {
+  background-color: #242F35;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+}
+
+a.darken img {
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+a.darken:hover img {
+  opacity: 0.7;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+}
+
+p {
+  font-size: 15px;
 }
 
 hr {
@@ -117,6 +156,11 @@ hr {
 
 .github p {
   margin-bottom: 20px;
+}
+
+.contact {
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .footer {
