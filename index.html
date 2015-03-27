@@ -1,9 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
-Work In Progress
-</body>
+	<head>
+		<title>engerium.io</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+		<script type="text/javascript">
+			function email(name, domain, withlink) {
+				var addr = name + '@' + domain;
+				if (withlink) {
+				  document.write('<p>Email: <a href="mailto:' + addr + '">' + addr + '</a></p>');
+				} else {
+				  document.write(addr);
+				}
+      		}
+		</script>
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="header buffer">
+				<h3>engerium<span>.io</span></h3>
+			</div>
+
+			<div class="profile dialog buffer col-sm-12 col-md-12 col-lg-12">
+				<img class="circle" src="img/avatar.png" alt="Profile Picture"></img>
+				<h2>Preshant Achuthan</h2>
+				<p>Aspiring infocomm security professional with a passion in iOS & Web development</p>
+			</div>
+
+			<div class="showcase dialog buffer col-sm-12 col-md-12 col-lg-12">
+				<h3>Projects</h3>
+				<hr>	
+				<div class="project col-sm-12 col-md-4 col-lg-4">
+					<a href="https://github.com/engerium/ABC-SSH"><h4>ABC-SSH</h4></a>
+					<p>Active Bots Control for SSH. A lightweight python script written with the aim of blocking bots which recursively attempt to login via bruteforce.</p>
+				</div>
+				<div class="project col-sm-12 col-md-4 col-lg-4">
+					<a href="https://github.com/engerium/average-cpl"><h4>Average-CPL</h4></a>
+					<p>An efficient script which scans for all files in a directory written in a particular lanuguage and counts the average number of characters per line.</p>
+				</div>
+				<div class="project col-sm-12 col-md-4 col-lg-4">
+					<a href="https://github.com/engerium/DDNS-CloudFlare"><h4>DDNS-CloudFlare</h4></a>
+					<p>Dynamic DNS for servers without a static IP address. This script makes use of CloudFlare's API to ensure your DNS settings are always updated.</p>
+				</div>
+				<div class="project col-sm-12 col-md-4 col-lg-4">
+					<a href="https://github.com/engerium/productivetime"><h4>ProductiveTime</h4></a>
+					<p>A simple iOS app written to improve productiveity while working. The app makes use of the pomodoro technique to ensure productivity at work.</p>
+				</div>
+				<div class="project col-sm-12 col-md-4 col-lg-4">
+					<a href="http://www.smarthomie.com"><h4>SmartHomie</h4></a>
+					<p>Smart home automation done right. SmartHomie is currently in the process of a rewrite and is expected to be complete by winter 2015.</p>
+				</div>
+				<div class="project col-sm-12 col-md-4 col-lg-4">
+					<a href="https://statocat.herokuapp.com"><h4>Statocat</h4></a>
+					<p>A statistics generator for GitHub profiles which is useful for employers to find potential employees based on the various code languages they write.</p>
+				</div>
+				<div class="project col-sm-12 col-md-4 col-lg-4">
+					<a href="https://github.com/AliasIO/Wappalyzer"><h4>Wappalyzer</h4></a>
+					<p>A cross-platform utility that uncovers the technologies used on websites. It detects web servers, JavaScript frameworks and many more.</p>
+				</div>
+			</div>
+
+			<div class="connections dialog buffer col-sm-12 col-md-12 col-lg-12">
+				<div class="blog col-sm-12 col-md-6 col-lg-6">
+					<h3>Blog</h3>
+					<hr>
+					<a href="https://blog.engerium.io" class="darken"><img src="img/blog.png"></a>			
+				</div>
+				<div class="github col-sm-12 col-md-6 col-lg-6">
+					<h3>GitHub</h3>
+					<hr>
+					<a href="https://github.com/engerium" class="darken"><img src="img/github.png"></a>
+				</div>
+			</div>
+
+			<div class="contact dialog buffer col-sm-12 col-md-12 col-lg-12">
+				<h3>Contact</h3>
+				<hr>
+				<p>Twitter: <a href="https://twitter.com/engerium">@engerium</a></p>
+				<p>Telegram: <a href="https://telegram.me/engerium">@engerium</a></p>
+				<script>email("engerium", "gmail.com", true);</script>
+			</div>
+
+			<div class="footer buffer">
+				<p>engerium<span>.io</span></p>
+			</div>
+
+		</div>
+	</body>
 </html>
