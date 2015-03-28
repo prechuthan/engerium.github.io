@@ -10,7 +10,19 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
+		<script src="js/jquery-2.1.3.min.js"></script>
 		<script type="text/javascript">
+			<!-- Doument ready check time-->
+			$(function() {
+				console.log("Hi there! Check out my contact information on ways to get in touch! :D");
+				var time = (new Date()).getHours();
+				if (time > 6 && time < 19) {
+					day();
+				}
+			});
+
+
+			<!-- Email -->
 			function email(name, domain, withlink) {
 				var addr = name + '@' + domain;
 				if (withlink) {
@@ -18,69 +30,107 @@
 				} else {
 				  document.write(addr);
 				}
-      		}
+	  		}
+
+	  		<!-- Adjust button day theme-->
+	  		function day() {
+	  			$("body").css({"background-color": "#E0E0E0", "color": "#21272b"});
+	  			$("h2").css({"color": "#009688"});
+	  			$("h3").css({"color": "#009688"});
+	  			$("h4").css({"color": "#009688"});
+	  			$("a").css({"color": "#009688"});
+	  			$("a").css({"color": "#009688"});
+	  			$("a:active").css({"color": "#009688"});
+	  			$("a:hover").css({"color": "#009688"});
+	  			$("a:visited").css({"color": "#009688"});
+	  			$("hr").css({"background-color": "#D3D3D2", "color": "#D3D3D2"});
+	  			$("span").css({"color": "#21272b"});
+	  			$("p span").css({"color": "#009688"});
+	  			$(".adjust-btn").addClass("day-adjust");
+	  			$(".dialog").css({"border-color": "#FFFFFF", "border-top-color": "#D3D3D2", "background-color": "#FFFFFF"});
+	  			$(".blog img").css({"border": "1px solid #D3D3D2"});
+	  			$(".github img").css({"border": "1px solid #D3D3D2"});
+	  			$("button").attr("onclick", "night()");
+	  		}
+
+	  		<!-- Adjust button night theme-->
+	  		function night() {
+	  			$(".adjust-btn").removeClass("day-adjust");
+	  			$("*").removeAttr("style");
+	  			$("button").attr("onclick", "day()");
+	  		}
 		</script>
 
 	</head>
 	<body>
 		<div class="container">
-			<div class="header buffer">
-				<h3>engerium<span>.io</span></h3>
+			<div class="header buffer col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<h3><span>engerium</span>.io</h3>
 			</div>
 
-			<div class="profile dialog buffer col-sm-12 col-md-12 col-lg-12">
+			<div class="adjust buffer col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xs-offset-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+				<button class="adjust-btn" onclick="day()">
+					<h3><span class="glyphicon glyphicon-adjust" aria-hidden="true"></span></h3>
+				</button>
+			</div>
+
+			<div class="profile dialog buffer col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<img class="circle" src="img/avatar.png" alt="Profile Picture"></img>
 				<h2>Preshant Achuthan</h2>
 				<p>Aspiring infocomm security professional with a passion in iOS & Web development</p>
 			</div>
 
-			<div class="showcase dialog buffer col-sm-12 col-md-12 col-lg-12">
+			<div class="showcase dialog buffer col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h3>Projects</h3>
 				<hr>	
-				<div class="project col-sm-12 col-md-4 col-lg-4">
+				<div class="project col-xs-12 col-sm-12 col-md-4 col-lg-4">
 					<a href="https://github.com/engerium/ABC-SSH"><h4>ABC-SSH</h4></a>
-					<p>Active Bots Control for SSH. A lightweight python script written with the aim of blocking bots which recursively attempt to login via bruteforce.</p>
+					<p>Active Bots Control for SSH. A lightweight python script written with the aim of blocking bots which repeatedly attempt to login via bruteforce.</p>
 				</div>
-				<div class="project col-sm-12 col-md-4 col-lg-4">
+				<div class="project col-xs-12 col-sm-12 col-md-4 col-lg-4">
 					<a href="https://github.com/engerium/average-cpl"><h4>Average-CPL</h4></a>
-					<p>An efficient script which scans for all files in a directory written in a particular lanuguage and counts the average number of characters per line.</p>
+					<p>An efficient script which scans for all files written in a particular lanuguage within a directory and counts the average number of characters per line.</p>
 				</div>
-				<div class="project col-sm-12 col-md-4 col-lg-4">
+				<div class="project col-xs-12 col-sm-12 col-md-4 col-lg-4">
 					<a href="https://github.com/engerium/DDNS-CloudFlare"><h4>DDNS-CloudFlare</h4></a>
 					<p>Dynamic DNS for servers without a static IP address. This script makes use of CloudFlare's API to ensure your DNS settings are always updated.</p>
 				</div>
-				<div class="project col-sm-12 col-md-4 col-lg-4">
+				<div class="project col-xs-12 col-sm-12 col-md-4 col-lg-4">
 					<a href="https://github.com/engerium/productivetime"><h4>ProductiveTime</h4></a>
-					<p>A simple iOS app written to improve productiveity while working. The app makes use of the pomodoro technique to ensure productivity at work.</p>
+					<p>A simple iOS app written to improve productivity while working. The app makes use of the pomodoro technique to ensure productivity at work.</p>
 				</div>
-				<div class="project col-sm-12 col-md-4 col-lg-4">
+				<div class="project col-xs-12 col-sm-12 col-md-4 col-lg-4">
 					<a href="http://www.smarthomie.com"><h4>SmartHomie</h4></a>
 					<p>Smart home automation done right. SmartHomie is currently in the process of a rewrite and is expected to be complete by winter 2015.</p>
 				</div>
-				<div class="project col-sm-12 col-md-4 col-lg-4">
+				<div class="project col-xs-12 col-sm-12 col-md-4 col-lg-4">
 					<a href="https://statocat.herokuapp.com"><h4>Statocat</h4></a>
 					<p>A statistics generator for GitHub profiles which is useful for employers to find potential employees based on the various code languages they write.</p>
 				</div>
-				<div class="project col-sm-12 col-md-4 col-lg-4">
+				<div class="project col-xs-12 col-sm-12 col-md-4 col-lg-4">
 					<a href="https://github.com/AliasIO/Wappalyzer"><h4>Wappalyzer</h4></a>
 					<p>A cross-platform utility that uncovers the technologies used on websites. It detects web servers, JavaScript frameworks and many more.</p>
 				</div>
 			</div>
 
-			<div class="connections dialog buffer col-sm-12 col-md-12 col-lg-12">
-				<div class="blog col-sm-12 col-md-6 col-lg-6">
+			<div class="connections dialog buffer col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="blog col-xs-12 col-sm-12 col-md-6 col-lg-6">
 					<h3>Blog</h3>
 					<hr>
-					<a href="https://blog.engerium.io" class="darken"><img src="img/blog.png"></a>			
+					<a href="https://blog.engerium.io" class="raise">
+						<img src="img/blog.png" alt="https://blog.engerium.io">
+					</a>
 				</div>
-				<div class="github col-sm-12 col-md-6 col-lg-6">
+				<div class="github col-xs-12 col-sm-12 col-md-6 col-lg-6">
 					<h3>GitHub</h3>
 					<hr>
-					<a href="https://github.com/engerium" class="darken"><img src="img/github.png"></a>
+					<a href="https://github.com/engerium" class="raise">
+						<img src="img/github.png" alt="https://github.com/engerium">
+					</a>
 				</div>
 			</div>
 
-			<div class="contact dialog buffer col-sm-12 col-md-12 col-lg-12">
+			<div class="contact dialog buffer col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h3>Contact</h3>
 				<hr>
 				<p>Twitter: <a href="https://twitter.com/engerium">@engerium</a></p>
@@ -88,7 +138,7 @@
 				<script>email("engerium", "gmail.com", true);</script>
 			</div>
 
-			<div class="footer buffer">
+			<div class="footer buffer col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<p>engerium<span>.io</span></p>
 			</div>
 
