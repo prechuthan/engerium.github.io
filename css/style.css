@@ -1,6 +1,6 @@
 body  {
   font-family: 'Lato', sans-serif;
-  background-color: #242F35; /* #1B2327 #263238 #36474F #FFFFFF #242F35*/
+  background-color: #242F35; /* #DCDCDC #757575 #159588*/
   color: #FFFFFF;
 }
 
@@ -19,30 +19,18 @@ a:hover {
   color: #7DCBC4;
 }
 
-a.darken {
-  background-color: #242F35;
-  filter: blur(0px);
-  -webkit-filter: blur(0px);
-  -moz-filter: blur(0px);
-  -o-filter: blur(0px);
-  -ms-filter: blur(0px);
+a.raise img {
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
-a.darken img {
-  -webkit-transition: all 0.1s linear;
-  -moz-transition: all 0.1s linear;
-  -ms-transition: all 0.1s linear;
-  -o-transition: all 0.1s linear;
-  transition: all 0.1s linear;
-}
-
-a.darken:hover img {
-  opacity: 0.7;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
+a.raise:hover img {
+  box-shadow: rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 16px 16px 0;
 }
 
 p {
@@ -61,7 +49,7 @@ hr {
 }
 
 .dialog {
-  border-color: #35454D;
+  border-color: #36474F; /* #FFFFFF #D3D3D2 #FFFFFF */
   border-top-color: #45545B;
   background-color: #36474F;
   border-radius: 2px;
@@ -70,16 +58,54 @@ hr {
   border-width: 1px;
 }
 
-.header h3 {
+.header span {
   color: #FFFFFF;
 }
 
-.header span {
-  color: #7DCBC4;
+.header.buffer {
+  padding-left: 0px;
+  margin-bottom: 20px; 
 }
 
-.header.buffer {
-  margin-bottom: 30px; 
+.adjust {
+  padding-top: 15px;
+  padding-right: 0px;
+  text-align: right;
+}
+
+.adjust h3 {
+  margin: 0px;
+}
+
+.adjust-btn {
+  padding-top: 4px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-color: transparent;
+  background-color: transparent;
+  border-radius: 100px;
+  border-style: solid;
+  border-width: 1px;
+  outline:none;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.adjust-btn:hover {
+  border-color: #35454D;
+  border-top-color: #45545B;
+  background: #36474F;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+}
+
+.day-adjust:hover {
+  border-color: #FFFFFF;
+  border-top-color: #FFFFFF;
+  background: #FFFFFF;
 }
 
 .circle {
