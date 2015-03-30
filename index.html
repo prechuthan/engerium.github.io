@@ -6,14 +6,15 @@
 		<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-		<script src="js/jquery-2.1.3.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
 		<script type="text/javascript">
 			<!-- Doument ready check time-->
-			$(function() {
+			$(document).ready(function() {
 				console.log("Hi there! Check out my contact information on ways to get in touch! :D");
 				var time = (new Date()).getHours();
 				if (time > 6 && time < 19) {
@@ -59,6 +60,17 @@
 	  			$("*").removeAttr("style");
 	  			$("button").attr("onclick", "day()");
 	  		}
+		</script>
+
+		<!-- Google analytics-->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-57613184-1', 'auto');
+			ga('send', 'pageview');
 		</script>
 
 	</head>
