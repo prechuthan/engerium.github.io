@@ -1,196 +1,84 @@
 body  {
-  font-family: 'Lato', sans-serif;
-  background-color: #242F35; /* #DCDCDC #757575 #159588*/
-  color: #FFFFFF;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #FFFFFF;
+  color: #212121;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  color: #7DCBC4;
+  font-weight: 600;
 }
 
-a, a:active, a:visited {
-  color: #7DCBC4;
+h4, h5, h6 {
+  font-weight: 400;
+}
+
+a:visited {
   text-decoration: none;
-}
-
-a:hover {
-  color: #7DCBC4;
-}
-
-a.raise img {
-  -webkit-transition: all 0.1s ease;
-  -moz-transition: all 0.1s ease;
-  -ms-transition: all 0.1s ease;
-  -o-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-a.raise:hover img {
-  box-shadow: rgba(0, 0, 0, 0.3) 0 16px 16px 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 16px 16px 0;
-  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 16px 16px 0;
-}
-
-p {
-  font-size: 15px;
-}
-
-hr {
-  border: 0 none;
-  height: 1px;
-  background-color: #45545B;
-  color: #45545B;
-}
-
-.buffer {
-  margin-bottom: 20px;
-}
-
-.dialog {
-  border-color: #36474F; /* #FFFFFF #D3D3D2 #FFFFFF */
-  border-top-color: #45545B;
-  background-color: #36474F;
-  border-radius: 2px;
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
-  border-style: solid;
-  border-width: 1px;
-}
-
-.header span {
   color: #FFFFFF;
 }
 
-.header.buffer {
-  padding-left: 0px;
-  margin-bottom: 20px; 
+a:hover {
+  text-decoration: none;
+  color: #FFEA00;
 }
 
-.adjust {
-  padding-top: 15px;
-  padding-right: 0px;
-  text-align: right;
+a:focus {
+  text-decoration: none;
+  color: #FFEA00;
 }
 
-.adjust h3 {
-  margin: 0px;
+a:hover, a:active {
+  text-decoration: none;
+  color: #FFEA00;
 }
 
-.adjust-btn {
-  padding-top: 4px;
-  padding-bottom: 2px;
-  padding-left: 6px;
-  padding-right: 6px;
-  border-color: transparent;
-  background-color: transparent;
-  border-radius: 100px;
-  border-style: solid;
-  border-width: 1px;
-  outline:none;
-  -webkit-transition: all 0.1s ease;
-  -moz-transition: all 0.1s ease;
-  -ms-transition: all 0.1s ease;
-  -o-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+.header {
+  background-color: #3F51B5;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
-.adjust-btn:hover {
-  border-color: #35454D;
-  border-top-color: #45545B;
-  background: #36474F;
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+.profile-img {
+  border-radius: 50%;
 }
 
-.day-adjust:hover {
-  border-color: #FFFFFF;
-  border-top-color: #FFFFFF;
-  background: #FFFFFF;
+.contact a {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
-.circle {
-  border-radius: 50% 50% 50% 50%;
+.feature {
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
-.profile {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.icon-header {
   text-align: center;
 }
 
-.profile h2{
-  margin-top: 10px;
+.security {
+  background-color: #FFFFFF;
 }
 
-.profile p {
-  margin-bottom: 0px;
+.developer {
+  background-color: #E8EAF6;
 }
 
-.profile img {
-  width: 100px;
-  height: 100px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.showcase {
-  padding-top: 0px;
-}
-
-.showcase h3 {
-  text-align: center;
-}
-
-.project {
-  margin-bottom: 30px;
-}
-
-.blog {
-  text-align: center;
-}
-
-.blog img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
-}
-
-.blog p {
-  margin-bottom: 20px;
-}
-
-.github{
-  text-align: center;
-}
-
-.github img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
-}
-
-.github p {
-  margin-bottom: 20px;
-}
-
-.contact {
-  text-align: center;
-  padding-bottom: 10px;
+.photographer {
+  background-color: #FFFFFF;
 }
 
 .footer {
+  background-color: #3F51B5;
+  color: #FFFFFF;
   text-align: center;
+  padding-top: 0.6em;
+  padding-bottom: 0.3em;
 }
 
-.footer span {
-  color: #7DCBC4;
+.footer-text {
+  margin-bottom: 0.2em;
 }
