@@ -81,7 +81,7 @@ a:hover, a:active {
 
 .photographer-text {
   font-weight: 600;
-  color: #3F51B5;
+  color: #3F51B5 !important;
   text-decoration: none;
 }
 
