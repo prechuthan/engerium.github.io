@@ -1,7 +1,7 @@
 body {
-  font-family: "Lato", sans-serif;
-  background-color: #ffffff;
-  color: #212121;
+  font-family: "Space Mono", monospace;
+  background-color: white;
+  /* color: #181818; */
   margin: 0;
 }
 
@@ -23,28 +23,39 @@ p {
 }
 
 a {
-  color: #ffffff;
+  /* color: #181818; */
   text-decoration: none;
 }
 
 a:visited {
   text-decoration: none;
-  color: #ffffff;
+  /* color: #181818; */
 }
 
 a:hover {
   text-decoration: none;
-  color: #ffea00;
+  /* color: #ffea00; */
 }
 
 a:focus {
   text-decoration: none;
-  color: #ffea00;
+  /* color: #ffea00; */
 }
 
 a:hover,
 a:active {
   text-decoration: none;
-  color: #ffea00;
+  /* color: #ffea00; */
 }
 
+.navbar {
+  background-color: rgba(255, 255, 255, 0)
+}
+
+.subtitle {
+  margin-bottom: 0px;
+}
+
+.subs-two {
+  margin-top: -1.25rem;
+}
